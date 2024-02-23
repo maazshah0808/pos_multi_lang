@@ -1,5 +1,5 @@
-<header id="page-topbar">
-    <div class="navbar-header">
+<header  id="page-topbar">
+    <div style="backgroud:#30d8ca !important;" class="navbar-header">
 
         <div class="d-flex align-items-left">
             <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
@@ -9,7 +9,7 @@
         </div>
 
         <div class="d-flex align-items-center">
-
+            <h4 class="mr-2 font-size-20">باوری زراعتی شرکت</h4>
          
             <div class="dropdown d-inline-block ml-2">
                 <button type="button" class="btn header-item waves-effect"

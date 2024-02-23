@@ -1,22 +1,38 @@
 <x-app-layout>
 @section('content')
-
+<style>
+    .img-style{
+  width: 120px; height: 90px; 
+  margin-left:75px;
+  
+}
+.label-txt{
+    color: #e30f47;
+}
+@media screen and (max-width: 480px) {
+    .img-style {
+        width: 88px; 
+        height: 40px; 
+    margin-left:130px;
+  }
+}
+</style>
 
 <br><br><br><br>
 <div class="container-fluid">
 
     <!-- start page title -->
-    <div class="row">
+    <div class="row text-center">
         <div class="col-12">
-            <div class="page-title-box d-flex align-items-center justify-content-between">
-                <h4 class="mb-0 font-size-18">Dashboard</h4>
+            <div class="mb-1">
+                <h4 class="mb-0 font-size-20"></h4>
 
             </div>
         </div>
     </div>
     <!-- end page title -->
 
-    <div class="row">
+    <div class="row d-none">
         <div class="col-md-6 col-xl-4">
             <div class="card">
                 <div class="card-body">
@@ -101,8 +117,70 @@
             <!--end card-->
         </div> <!-- end col-->
     </div>
-
     <div class="row">
+        <div class="col-lg-12 align-middle">
+            {{-- <div class="card border-left-warning shadow h-100 py-2"> --}}
+			
+                {{-- <div class="card-body"> --}}
+                    <div class="row text-center">
+                        
+                        <div class="col-xl-3 col-md-6 col-sm-6 text-center img-box">
+                            <div class="card border-left-warning shadow h-60">
+                                <div class="card-body">
+                                    <img class="img-style" src="{{asset('img/supplier.png')}}"><br>
+                                    <label class="label-txt"><b>نوی گراک نوم</b></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-6 text-center img-box">
+                            <a href="{{route('product.index')}}">
+                            <div class="card border-left-warning shadow h-60">
+                                <div class="card-body">
+                                    
+                                    <img class="img-style" src="{{asset('img/item.png')}}"><br>
+                                    <label class="label-txt"><b>دوا نوم</b></label>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-6 text-center img-box">
+                            <div class="card border-left-warning shadow h-60">
+                                <div class="card-body">
+                                    <img class="img-style" src="{{asset('img/expense.png')}}"><br>
+                                    <label class="label-txt"><b>خرچہ</b></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-6 text-center img-box">
+                            <div class="card border-left-warning shadow h-60">
+                                <div class="card-body">
+                                    <img class="img-style" src="{{asset('img/purchase.png')}}"><br>
+                                    <label class="label-txt"><b>سامان خرید</b></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-6 text-center img-box">
+                            <div class="card border-left-warning shadow h-60">
+                                <div class="card-body">
+                                    <img class="img-style" src="{{asset('img/sale.png')}}"><br>
+                                    <label class="label-txt"><b>سامان فروخت</b></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-sm-6 text-center img-box">
+                            <div class="card border-left-warning shadow h-60">
+                                <div class="card-body">
+                                    <img class="img-style" src="{{asset('img/ledger.png')}}"><br>
+                                    <label class="label-txt"><b>ورباندی کھاتہ</b></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{-- </div> --}}
+            {{-- </div> --}}
+        </div>
+    </div>
+    {{-- <div class="row">
         <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
@@ -159,7 +237,7 @@
                     </div>
                 </div>
         </div>
-    </div>
+    </div> --}}
     <!-- end row-->
 </div> <!-- container-fluid -->
 

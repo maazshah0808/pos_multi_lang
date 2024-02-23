@@ -32,30 +32,33 @@
             <div class="card">
                 <div class="card-body">
                     <div class="mb-4">
-                        <h2 class="card-title mb-0">Product</h2>
+                        <h2 class="card-title mb-0">سامان</h2>
                     </div>
 
                     <button type="button" class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#addmodel">
-                        Add Product
+                        سامان کا اندراج
                     </button>
 
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body table-responsive">
 
                                     <table id="" class="table table-striped nowrap data-table">
                                         <thead>
                                             <tr>
-                                                <th>#</th>
-                                                <th>Product Name</th>
+                                                <th>سامان کا نمبر</th>
+                                                <th>سامان کا نام</th>
                                                 {{-- <th>Unit</th> --}}
-                                                <th>Brand</th>
-                                             <th>Category</th>
+                                                {{-- <th>Brand</th>
+                                                <th>Category</th>
                                                 <th>Status</th>
-                                                <th>Created By</th>
+                                                <th>Created By</th> --}}
                                                 {{-- <th>Created At</th>
                                                 <th>Updated At</th>  --}}
+                                                <th>فی کارٹن تعداد</th>
+                                                <th>قیمت خرید</th>
+                                                <th>قیمت فروخت</th>
                                                 <th>Action</th>
                                                
                                                 
@@ -86,7 +89,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">سامان</h5>
                     <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -99,12 +102,29 @@
                        <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="control-label">Product Name <span class="text-danger">*</span></label>
+                                    <label class="control-label">سامان کا نام <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control input-lg" name="productname" required>
                                 </div>
                             </div>
-                           
                             <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">فی کارٹن تعداد<span class="text-danger">*</span></label>
+                                    <input value="0" type="text" class="form-control input-lg" name="productname" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">قیمت خرید<span class="text-danger">*</span></label>
+                                    <input value="0" type="text" class="form-control input-lg" name="productname" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">قیمت فروخت<span class="text-danger">*</span></label>
+                                    <input value="0" type="text" class="form-control input-lg" name="productname" required>
+                                </div>
+                            </div>
+                            {{-- <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label">Brand <span class="text-danger">*</span></label>
                                     <select  class="form-control" name="brand" required>
@@ -127,15 +147,15 @@
                                         @endforeach
                                     </select>
                                 </div>
-                            </div>
+                            </div> --}}
                        </div>
                    
                     <br>
                     <div class="form-group">
                         <div>
-                            <button class="btn btn-primary w-24">Save</button>
+                            <button class="btn btn-primary w-24">محفوظ کریں</button>
 
-                            <button type="button" class="btn btn-secondary waves-effect waves-light" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary waves-effect waves-light" data-dismiss="modal">بند کریں</button>
 
                         </div>
                     </div>

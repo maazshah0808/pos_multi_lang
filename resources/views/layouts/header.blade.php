@@ -29,7 +29,7 @@
             </div>
 
 
-
+{{-- 
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> --}}
 
         </div>
         <!-- end main content-->

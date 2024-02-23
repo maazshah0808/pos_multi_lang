@@ -34,13 +34,13 @@ class ProductController extends Controller
             return Datatables::of($data)
                     ->addIndexColumn()
 
-                    ->addColumn('status', function($row){
-                        if($row->status == 1){
-                            return "Active";
-                       }else{
-                            return "Inactive";
-                       }
-                 })
+                //     ->addColumn('status', function($row){
+                //         if($row->status == 1){
+                //             return "Active";
+                //        }else{
+                //             return "Inactive";
+                //        }
+                //  })
 
                     ->addColumn('action', function($row){
                            $btn = '<button value="'.$row->id.'" class="edit btn btn-primary btn-sm editbtn">Edit</button>';
